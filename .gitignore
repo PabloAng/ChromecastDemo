@@ -1,0 +1,30 @@
+# Git Ignore Files
+
+#####################
+## Android Ignores ##
+#####################
+
+# built application files
+*.apk
+*.ap_
+
+# files for the dex VM
+*.dex
+
+# Java class files
+*.class
+
+# generated files
+bin/
+gen/
+
+######################
+#### IDEA Ignores ####
+######################
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Local configuration file (sdk path, etc)
+local.properties

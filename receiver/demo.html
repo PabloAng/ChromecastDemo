@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Chromecast demo</title>
+        <script src="https://www.gstatic.com/cast/js/receiver/09/cast_receiver.js"></script>
+        <script src="demo.js"></script>
+        <script type="text/javascript">
+            window.onload = onLoad;
+
+            /**
+            * Initializes the receiver application and starts the
+            * receiver.
+            */
+            function onLoad() {
+                var castApp = new cast.receiver.Receiver("ChromecastDemo",
+                [ cast.ChromecastDemo.PROTOCOL ], "", 5);
+                var favIcon = document.getElementById("favIcon");
+
+                var appEngine = new cast.ChromecastDemo();
+                appEngine.mChannelHandler.addChannelFactory(
+                castApp.createChannelFactory(cast.ChromecastDemo.PROTOCOL));
+                castApp.start();
+            }
+        </script>
+    </head>
+    <body>
+        <h1 id="title">Untitled</h1>
+    </body>
+</html>

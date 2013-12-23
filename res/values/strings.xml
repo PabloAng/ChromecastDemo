@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chromecast Demo</string>
+    <string name="select_device_text">Select device.</string>
+    <string name="default_title">Default</string>
+    <string name="waiting_new_title">Waiting new title</string>
+    <string name="send">Send</string>
+    <string name="media_route_menu_title">Device&#8230;</string>
+</resources>
